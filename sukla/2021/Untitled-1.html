@@ -6,7 +6,7 @@
 </head>
 <style>
 
-.sekooshacked1 {
+.form-control {
 display:block;
 width:100%;
 height:34px;
@@ -25,6 +25,207 @@ transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 padding:6px 12px;
 }
 
+.form-control:focus {
+outline:0;
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+border-color:#66afe9;
+}
+
+.form-control::-moz-placeholder {
+color:#999;
+opacity:1;
+}
+
+.form-control::-ms-expand {
+background-color:transparent;
+border:0;
+}
+
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
+background-color:#eee;
+opacity:1;
+}
+
+.form-group {
+margin-bottom:15px;
+}
+
+.checkbox,.radio {
+position:relative;
+display:block;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.checkbox label,.radio label {
+min-height:20px;
+padding-left:20px;
+margin-bottom:0;
+font-weight:400;
+cursor:pointer;
+}
+
+.checkbox input[type=checkbox],.checkbox-inline input[type=checkbox],.radio input[type=radio],.radio-inline input[type=radio] {
+position:absolute;
+margin-top:4px;
+margin-left:-20px;
+}
+
+.checkbox-inline,.radio-inline {
+position:relative;
+display:inline-block;
+padding-left:20px;
+margin-bottom:0;
+font-weight:400;
+vertical-align:middle;
+cursor:pointer;
+}
+
+.checkbox-inline+.checkbox-inline,.radio-inline+.radio-inline {
+margin-top:0;
+margin-left:10px;
+}
+
+.form-control-static {
+min-height:34px;
+padding-top:7px;
+padding-bottom:7px;
+margin-bottom:0;
+}
+
+.form-control-static.input-lg,.form-control-static.input-sm {
+padding-right:0;
+padding-left:0;
+}
+
+.form-group-sm .form-control-static {
+height:30px;
+min-height:32px;
+font-size:12px;
+line-height:1.5;
+padding:6px 10px;
+}
+
+.form-group-lg .form-control-static {
+height:46px;
+min-height:38px;
+font-size:18px;
+line-height:1.3333333;
+padding:11px 16px;
+}
+
+.has-feedback .form-control {
+padding-right:42.5px;
+}
+
+.form-control-feedback {
+position:absolute;
+top:0;
+right:0;
+z-index:2;
+display:block;
+width:34px;
+height:34px;
+line-height:34px;
+text-align:center;
+pointer-events:none;
+}
+
+.form-group-lg .form-control+.form-control-feedback,.input-group-lg+.form-control-feedback,.input-lg+.form-control-feedback {
+width:46px;
+height:46px;
+line-height:46px;
+}
+
+.form-group-sm .form-control+.form-control-feedback,.input-group-sm+.form-control-feedback,.input-sm+.form-control-feedback {
+width:30px;
+height:30px;
+line-height:30px;
+}
+
+.has-success .form-control {
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+border-color:#3c763d;
+}
+
+.has-success .form-control:focus {
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #67b168;
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #67b168;
+border-color:#2b542c;
+}
+
+.has-success .input-group-addon {
+color:#3c763d;
+background-color:#dff0d8;
+border-color:#3c763d;
+}
+
+.has-warning .form-control {
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+border-color:#8a6d3b;
+}
+
+.has-warning .form-control:focus {
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #c0a16b;
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #c0a16b;
+border-color:#66512c;
+}
+
+.has-warning .input-group-addon {
+color:#8a6d3b;
+background-color:#fcf8e3;
+border-color:#8a6d3b;
+}
+
+.has-error .form-control {
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+border-color:#a94442;
+}
+
+.has-error .form-control:focus {
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+border-color:#843534;
+}
+
+.has-error .input-group-addon {
+color:#a94442;
+background-color:#f2dede;
+border-color:#a94442;
+}
+
+.has-feedback label~.form-control-feedback {
+top:25px;
+}
+
+.has-feedback label.sr-only~.form-control-feedback {
+top:0;
+}
+
+.help-block {
+display:block;
+margin-top:5px;
+margin-bottom:10px;
+color:#737373;
+}
+
+.form-horizontal .checkbox,.form-horizontal .checkbox-inline,.form-horizontal .radio,.form-horizontal .radio-inline {
+padding-top:7px;
+margin-top:0;
+margin-bottom:0;
+}
+
+.form-horizontal .checkbox,.form-horizontal .radio {
+min-height:27px;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+right:15px;
+}
 
 
 </style>
@@ -41,18 +242,18 @@ padding:6px 12px;
 <br />	
 <br />	
 		
-Adı Soyadı : <input class="sekooshacked1" type="text" id="birincimetinkutusu" name="metinkutusubir" value="Serhat Şukla">
+Adı Soyadı : <input class="form-control input-sm" type="text" id="birincimetinkutusu" name="metinkutusubir" value="Serhat Şukla">
 
-Şehir : <input class="sekooshacked1" type="text" id="birincisehirkutusu" name="sehirkutusubir" value="Bursa">
+Şehir : <input class="form-control input-sm" type="text" id="birincisehirkutusu" name="sehirkutusubir" value="Bursa">
 		
 <button>Kaydet</button>
 		
 	</form>
 	<form id ="NickFormu" name="İkinciform">
 
-Nick Name : <input class="sekooshacked1" type="text" id="ikincimetinkutusu" name="metinkutusubir" value="💝💋𝓢𝓔𝓡𝓗𝓐𝓣💝💋">
+Nick Name : <input class="form-control input-sm" type="text" id="ikincimetinkutusu" name="metinkutusubir" value="💝💋𝓢𝓔𝓡𝓗𝓐𝓣💝💋">
 
-Sunucusu : <input class="sekooshacked1" type="text" id="ikincisunucukutusu" name="sehirkutusubir" value="Dünya">
+Sunucusu : <input class="form-control input-sm" type="text" id="ikincisunucukutusu" name="sehirkutusubir" value="Dünya">
 	
 <button>Kaydet</button>	
 		
