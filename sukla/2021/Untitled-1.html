@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<form id ="İsimFormu" name="İlkForm" action="file:///C:/Users/Administrator/Desktop/Untitled-1.php" target="_blank" method="post" accept-charset="utf-8" autocomplete="on" enctype="multipart/form-data" novalidate>
+		
+<br />	
+<br />	
+		
+Adı Soyadı : <input type="text" id="birincimetinkutusu" name="metinkutusubir" value="Serhat Şukla">
+
+Şehir : <input type="text" id="birincisehirkutusu" name="sehirkutusubir" value="Bursa">
+		
+<button>Kaydet</button>
+		
+	</form>
+	<form id ="NickFormu" name="İkinciform">
+
+Nick Name : <input type="text" id="ikincimetinkutusu" name="metinkutusubir" value="💝💋𝓢𝓔𝓡𝓗𝓐𝓣💝💋">
+
+Sunucusu : <input type="text" id="ikincisunucukutusu" name="sehirkutusubir" value="Dünya">
+	
+<button>Kaydet</button>	
+		
+</form>	
+	
+	<div id="Ekrangöster"></div>
+	<div id="Ekrangöster1"></div>
+	<div id="Ekrangöster2"></div>
+	<div id="Ekrangöster3"></div>
+	<div id="Ekrangöster4"></div>
+	<div id="Ekrangöster5"></div>
+	<div id="Ekrangöster6"></div>
+	<div id="Ekrangöster7"></div>
+	<div id="Ekrangöster8"></div>
+	<div id="Ekrangöster9"></div>
+	<div id="Ekrangöster10"></div>
+	<div id="Ekrangöster11"></div>
+	<div id="Ekrangöster12"></div>
+	<div id="Ekrangöster13"></div>	
+
+	
+	
+<br />
+<br />
+<br />
+	
+	
+<script id="Ders437" type="text/javascript" language="javascript">
+debugger	
+// forms 	:	Belge içerisindeki form tag'ına (etiketine) sahip elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngü ile elde edilebilir.	
+	
+var insanlardan 	=	document.forms.length
+
+document.getElementById("Ekrangöster").innerHTML = "Form sayısı : " + insanlardan
+	
+//
+	
+var uzak  	=	document.forms[0].id
+
+document.getElementById("Ekrangöster1").innerHTML = "Form idsi : " + uzak 
+	
+//
+	
+var duran 	=	document.forms.item(1).id
+document.getElementById("Ekrangöster2").innerHTML = "Form idsi : " + duran
+	
+//
+	
+var kimse 	=	document.forms.namedItem("İsimFormu").innerHTML
+document.getElementById("Ekrangöster3").innerHTML = "Kopya Form :<br />" + kimse
+	
+//
+	
+var sonuc 	=	document.forms
+var adet 	=	document.forms.length
+var dizi	=	[];
+for(var baslangic = 0; baslangic<adet; baslangic++){
+	var deger	=	sonuc[baslangic].id
+	dizi[baslangic] 	=	deger
+}
+
+document.getElementById("Ekrangöster4").innerHTML = "Form ID'leri : " + dizi
+	
+//
+
+var formumuz 	=	document.forms[0]
+var adet 		=	document.forms[0].length
+var dizi		=	[];
+for(var baslangic = 0; baslangic<adet; baslangic++){
+	var deger	=	formumuz.elements[baslangic].value
+	if(deger!=""){
+		dizi[baslangic] 	=	deger
+	}
+}
+
+document.getElementById("Ekrangöster5").innerHTML = "Form Elemanları İçerikleri : " + dizi
+	
+//
+	
+var sonuc 	=	document.forms[0].id
+
+document.getElementById("Ekrangöster6").innerHTML = "Form ID'si : " + sonuc
+
+//
+	
+var Sokağa  	=	document.forms[0].name
+
+document.getElementById("Ekrangöster7").innerHTML = "Form Name'i : " + Sokağa 
+
+	
+//
+	
+var düşmek 	=	document.forms[0].action
+	
+document.getElementById("Ekrangöster8").innerHTML = "Form gideceği adres : " + düşmek
+	
+//
+	
+var sonuc 	=	document.forms[0].target
+document.getElementById("Ekrangöster9").innerHTML = "Form hedef penceresi : " + sonuc
+
+//
+	
+var sonuc 	=	document.forms[0].method
+document.getElementById("Ekrangöster10").innerHTML = "Form metodu : " + sonuc
+	
+	
+// 	
+	
+var sonuc 	=	document.forms[0].autocomplete
+document.getElementById("Ekrangöster11").innerHTML = "Form otomatik doldurma : " + sonuc
+	
+//
+	
+var sonuc 	=	document.forms[0].enctype
+document.getElementById("Ekrangöster12").innerHTML = "Form enctype değeri : " + sonuc
+	
+//
+	
+var sonuc 	=	document.forms[0].noValidate
+document.getElementById("Ekrangöster13").innerHTML = "Form Validate değeri : " + sonuc	
+	
+	</script>	
+</body>
+</html>
